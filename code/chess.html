@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <h1>Chess</h1>
+    <h2 id="tog">White's Turn</h2>
+
+    <div class="promotion W">
+        <div class="box Wofficial">Wqueen</div>
+        <div class="box Wofficial">Wrook</div>
+        <div class="box Wofficial">Wbishop</div>
+        <div class="box Wofficial">Wknight</div>
+    </div>
+
+    <div class="chessBoard">
+        <div class="firstDiv">
+            <div class="color1"></div>
+            <div class="alphabets" id="alphabets1">
+                <div class="alphabet">H</div>
+                <div class="alphabet">G</div>
+                <div class="alphabet">F</div>
+                <div class="alphabet">E</div>
+                <div class="alphabet">D</div>
+                <div class="alphabet">C</div>
+                <div class="alphabet">B</div>
+                <div class="alphabet">A</div>
+            </div>
+            <div class="color2"></div>
+        </div>
+
+        <div class="secondDiv">
+            <div class="numbers" id="numbers1">
+                <div class="number">8</div>
+                <div class="number">7</div>
+                <div class="number">6</div>
+                <div class="number">5</div>
+                <div class="number">4</div>
+                <div class="number">3</div>
+                <div class="number">2</div>
+                <div class="number">1</div>
+            </div>
+            <div class="chessSpace">
+                <div class="chessBox" id="row8">
+                    <div class="box" id="b801">Brook</div>
+                    <div class="box" id="b802">Bknight</div>
+                    <div class="box" id="b803">Bbishop</div>
+                    <div class="box" id="b804">Bqueen</div>
+                    <div class="box" id="b805">Bking</div>
+                    <div class="box" id="b806">Bbishop</div>
+                    <div class="box" id="b807">Bknight</div>
+                    <div class="box" id="b808">Brook</div>
+                </div>
+                <div class="chessBox" id="row7">
+                    <div class="box" id="b701">Bpawn</div>
+                    <div class="box" id="b702">Bpawn</div>
+                    <div class="box" id="b703">Bpawn</div>
+                    <div class="box" id="b704">Bpawn</div>
+                    <div class="box" id="b705">Bpawn</div>
+                    <div class="box" id="b706">Bpawn</div>
+                    <div class="box" id="b707">Bpawn</div>
+                    <div class="box" id="b708">Bpawn</div>
+                </div>
+                <div class="chessBox" id="row6">
+                    <div class="box" id="b601"></div>
+                    <div class="box" id="b602"></div>
+                    <div class="box" id="b603"></div>
+                    <div class="box" id="b604"></div>
+                    <div class="box" id="b605"></div>
+                    <div class="box" id="b606"></div>
+                    <div class="box" id="b607"></div>
+                    <div class="box" id="b608"></div>
+                </div>
+                <div class="chessBox" id="row5">
+                    <div class="box" id="b501"></div>
+                    <div class="box" id="b502"></div>
+                    <div class="box" id="b503"></div>
+                    <div class="box" id="b504"></div>
+                    <div class="box" id="b505"></div>
+                    <div class="box" id="b506"></div>
+                    <div class="box" id="b507"></div>
+                    <div class="box" id="b508"></div>
+                </div>
+                <div class="chessBox" id="row4">
+                    <div class="box" id="b401"></div>
+                    <div class="box" id="b402"></div>
+                    <div class="box" id="b403"></div>
+                    <div class="box" id="b404"></div>
+                    <div class="box" id="b405"></div>
+                    <div class="box" id="b406"></div>
+                    <div class="box" id="b407"></div>
+                    <div class="box" id="b408"></div>
+                </div>
+                <div class="chessBox" id="row3">
+                    <div class="box" id="b301"></div>
+                    <div class="box" id="b302"></div>
+                    <div class="box" id="b303"></div>
+                    <div class="box" id="b304"></div>
+                    <div class="box" id="b305"></div>
+                    <div class="box" id="b306"></div>
+                    <div class="box" id="b307"></div>
+                    <div class="box" id="b308"></div>
+                </div>
+                <div class="chessBox" id="row2">
+                    <div class="box Wpawn" id="b201">Wpawn</div>
+                    <div class="box Wpawn" id="b202">Wpawn</div>
+                    <div class="box Wpawn" id="b203">Wpawn</div>
+                    <div class="box Wpawn" id="b204">Wpawn</div>
+                    <div class="box Wpawn" id="b205">Wpawn</div>
+                    <div class="box Wpawn" id="b206">Wpawn</div>
+                    <div class="box Wpawn" id="b207">Wpawn</div>
+                    <div class="box Wpawn" id="b208">Wpawn</div>
+                </div>
+                <div class="chessBox" id="row1">
+                    <div class="box" id="b101">Wrook</div>
+                    <div class="box" id="b102">Wknight</div>
+                    <div class="box" id="b103">Wbishop</div>
+                    <div class="box" id="b104">Wqueen</div>
+                    <div class="box" id="b105">Wking</div>
+                    <div class="box" id="b106">Wbishop</div>
+                    <div class="box" id="b107">Wknight</div>
+                    <div class="box" id="b108">Wrook</div>
+                </div>
+            </div>
+            <div class="numbers" id="numbers2">
+                <div class="number">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="number">6</div>
+                <div class="number">7</div>
+                <div class="number">8</div>
+            </div>
+        </div>
+
+        <div class="thirdDiv">
+            <div class="color1"></div>
+            <div class="alphabets" id="alphabets2">
+                <div class="alphabet">A</div>
+                <div class="alphabet">B</div>
+                <div class="alphabet">C</div>
+                <div class="alphabet">D</div>
+                <div class="alphabet">E</div>
+                <div class="alphabet">F</div>
+                <div class="alphabet">G</div>
+                <div class="alphabet">H</div>
+            </div>
+            <div class="color2"></div>
+        </div>
+    </div>
+
+    <div class="promotion B">
+        <div class="box Bofficial">Bqueen</div>
+        <div class="box Bofficial">Brook</div>
+        <div class="box Bofficial">Bbishop</div>
+        <div class="box Bofficial">Bknight</div>
+    </div>
+    
+    <script src="chess.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+h1{
+    margin: 10px;
+    color: white;
+    background: linear-gradient(to right, black, red);
+    width: 50%;
+}
+#tog{
+    margin: 10px;
+    color: white;
+    background-color: black;
+    width: 30%;
+}
+.chessBoard{
+    width: 400px;
+    height: 400px;
+}
+.firstDiv, .thirdDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+}
+.firstDiv{
+    transform: rotate(180deg);
+}
+.color1{
+    width: 5%;
+    height: 100%;
+    background-color: black;
+    border-bottom-left-radius: 50%;
+}
+.alphabets{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    background: linear-gradient(to left, black, red);
+    color: white;
+}
+.alphabet{
+    width: calc(100% / 8);
+}
+.color2{
+    width: 5%;
+    height: 100%;
+    background-color: red;
+    border-bottom-right-radius: 50%;
+}
+.secondDiv{
+    display: flex;
+    height: 90%;
+}
+.numbers{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, red, black);
+    color: white;
+}
+.number{
+    height: calc(100% / 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#numbers2{
+    transform: rotate(180deg);
+}
+.chessSpace{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.chessBox{
+    display: flex;
+    height: calc(100% / 8);
+}
+.box{
+    width: calc(100% / 8);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+}
+.allImg{
+    width: 80%;
+    position: relative;
+}
+.allPawn{
+    transform: scale(.8);
+}
+
+.promotion{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.Wofficial, .Bofficial{
+    width: calc(100%/4);
+    font-size: 0px;
+}
+.W, .B{
+    display: none;
+}
